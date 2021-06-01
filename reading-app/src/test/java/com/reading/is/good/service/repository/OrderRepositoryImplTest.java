@@ -23,10 +23,11 @@ import com.reading.is.good.service.domain.Order;
 import com.reading.is.good.service.domain.OrderDetail;
 import com.reading.is.good.service.exception.ErrorResultException;
 import com.reading.is.good.service.repository.command.InsertOrderCommand;
+import com.reading.is.good.service.repository.impl.OrderRepositoryImpl;
 import com.reading.is.good.service.repository.jpa.BookEntity;
 import com.reading.is.good.service.repository.jpa.CustomerEntity;
 import com.reading.is.good.service.repository.jpa.OrderEntity;
-import com.reading.is.good.service.repository.jpa.OrderJpaRepository;
+import com.reading.is.good.service.repository.jpa.repository.OrderJpaRepository;
 
 @ExtendWith(MockitoExtension.class)
 public class OrderRepositoryImplTest {

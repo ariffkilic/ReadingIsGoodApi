@@ -15,8 +15,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.reading.is.good.service.domain.Book;
 import com.reading.is.good.service.exception.ErrorResultException;
+import com.reading.is.good.service.repository.impl.BookRepositoryImpl;
 import com.reading.is.good.service.repository.jpa.BookEntity;
-import com.reading.is.good.service.repository.jpa.BookJpaRepository;
+import com.reading.is.good.service.repository.jpa.repository.BookJpaRepository;
 
 @ExtendWith(MockitoExtension.class)
 public class BookRepositoryImplTest {

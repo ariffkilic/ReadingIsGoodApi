@@ -14,8 +14,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.reading.is.good.service.exception.ErrorResultException;
 import com.reading.is.good.service.repository.command.InsertCustomerCommand;
+import com.reading.is.good.service.repository.impl.CustomerRepositoryImpl;
 import com.reading.is.good.service.repository.jpa.CustomerEntity;
-import com.reading.is.good.service.repository.jpa.CustomerJpaRepository;
+import com.reading.is.good.service.repository.jpa.repository.CustomerJpaRepository;
 
 @ExtendWith(MockitoExtension.class)
 public class CustomerRepositoryImplTest {

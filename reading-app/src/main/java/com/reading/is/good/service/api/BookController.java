@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.reading.is.good.service.api.converter.BookApiConverter;
 import com.reading.is.good.service.api.dto.BookRequest;
 import com.reading.is.good.service.api.dto.BookResponse;
 import com.reading.is.good.service.service.BookService;

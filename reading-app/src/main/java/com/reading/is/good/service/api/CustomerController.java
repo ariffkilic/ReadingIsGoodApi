@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.reading.is.good.service.api.converter.CustomerApiConverter;
 import com.reading.is.good.service.api.dto.CustomerRequest;
 import com.reading.is.good.service.api.dto.CustomerResponse;
 import com.reading.is.good.service.api.dto.CustomersResponse;
@@ -35,7 +36,8 @@ public class CustomerController {
 	
 	@GetMapping
 	@ResponseStatus(OK)
-	public CustomersResponse retrieveCustomers(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "10") int size){
+	public CustomersResponse retrieveCustomers(@RequestParam(defaultValue = "1") int page, 
+			@RequestParam(defaultValue = "10") int size){
 		return CustomerApiConverter.toCustomersResponse(service.retrieve(page,size));
 	}
 
