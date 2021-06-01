@@ -5,12 +5,11 @@
   - Maven 3+
   - Docker
   - Spring Boot
-  - H2 Database
 
 # Steps to run
 #### Build jar
     - Execute "mvn clean install" command on <project path>/
-    - docker build -t reading-app.
+    - docker build -t reading-app .
     - docker run -d -p 8080:8080 reading-app
 #### Application UP on IDE
     - There is no any configuration needed.
