@@ -8,7 +8,7 @@
 
 # Steps to run
 ##### Build jar
-    - Execute "mvn clean compile package" command on <project path>/
+    - Execute "mvn clean install" command on <project path>/
 
 
 
