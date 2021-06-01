@@ -5,6 +5,7 @@
   - Maven 3+
   - Docker
   - Spring Boot
+  - H2 Databse
 
 # Steps to run
 ##### Build jar
