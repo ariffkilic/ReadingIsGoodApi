@@ -1,16 +1,24 @@
 # Reading Is Good Api
-
-### Requirements
+  
+### Technologies Used
   - Java 11
-  - Maven 3+
+  - Maven
   - Docker
-  - Spring Boot
+  - Spring boot
+  - Mockito
+  - Junit5 
+  - H2 database
 
 # Steps to run
-#### Build jar
-    - Execute "mvn clean install" command on <project path>/
+
+#### Run app 
+    - Execute "mvn clean install" command on <project path
+    - Execute java -jar .\reading-app-0.0.1-SNAPSHOT.jar
+
+#### Run app on Docker
     - docker build -t reading-app .
     - docker run -d -p 8080:8080 reading-app
+    
 #### Application UP on IDE
     - There is no any configuration needed.
     - Execute ReadingAppApplication.java
