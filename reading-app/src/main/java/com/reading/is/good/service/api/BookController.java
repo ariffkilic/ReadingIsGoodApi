@@ -36,7 +36,7 @@ public class BookController {
 	@PutMapping(value = "/{id}")
 	@ResponseStatus(CREATED)
 	public BookResponse updateBook(@Valid @PathVariable(value = "id") Long id, 
-			@Min(value = 1, message = "Stock must be greater than zero") @RequestBody Long stock ){
+			  @RequestBody @Valid @Min(value = 1, message = "Stock must be greater than zero") Long stock ){
 		return BookApiConverter.toBookResponse(service.update(id, stock));
 	}
 
